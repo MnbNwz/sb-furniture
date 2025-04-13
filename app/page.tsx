@@ -83,7 +83,6 @@ export default function Home() {
       { threshold: 0.3 } // Lower threshold to detect sections earlier
     );
 
-    // Observe all sections and ensure they have IDs
     if (homeRef.current) {
       homeRef.current.id = "home";
       observer.observe(homeRef.current);
@@ -193,19 +192,25 @@ export default function Home() {
     return isValid;
   };
 
-  // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (validateForm()) {
-      setFormSubmitting(true);
+    if (!validateForm()) return;
 
-      // Simulate form submission
-      setTimeout(() => {
-        setFormSubmitting(false);
+    setFormSubmitting(true);
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
         setFormSubmitted(true);
 
-        // Reset form after submission
         setFormState({
           firstName: "",
           lastName: "",
@@ -214,11 +219,19 @@ export default function Home() {
           message: "",
         });
 
-        // Reset form submission status after 5 seconds
         setTimeout(() => {
           setFormSubmitted(false);
         }, 5000);
-      }, 1500);
+      } else {
+        console.error(
+          "Form submission error:",
+          data.message || "Unknown error"
+        );
+      }
+    } catch (error) {
+      console.error("Server error:", error);
+    } finally {
+      setFormSubmitting(false);
     }
   };
 
@@ -830,14 +843,14 @@ export default function Home() {
               <div className="mx-auto grid gap-8 py-12 md:grid-cols-2">
                 <div className="space-y-6">
                   <a
-                    href="https://www.google.com/maps?q=53.59054420595836,-0.6601625423278892"
+                    href="https://www.google.com/maps?q=65+Doncaster+Rd,+Scunthorpe+DN15+7RG,+UK"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
                   >
                     <div className="rounded-lg overflow-hidden border border-teal-600 h-[300px] w-full shadow-md">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d949.1931765860513!2d-0.6601625423278892!3d53.59054420595836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1713000000000!5m2!1sen!2suk"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948.9759938321787!2d-0.6600289!3d53.5905969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878db1f8949b5bb%3A0xc20555cbefadbd84!2s65%20Doncaster%20Rd%2C%20Scunthorpe%20DN15%207RG%2C%20UK!5e0!3m2!1sen!2suk!4v1713001234567!5m2!1sen!2suk"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
@@ -850,7 +863,7 @@ export default function Home() {
 
                   <div className="space-y-4">
                     <a
-                      href="https://www.google.com/maps?q=31.5204,74.3587"
+                      href="https://www.google.com/maps?q=65+Doncaster+Rd,+Scunthorpe+DN15+7RG,+UK"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-teal-100 hover:text-white transition-colors"
