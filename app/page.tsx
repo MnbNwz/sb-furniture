@@ -420,7 +420,6 @@ export default function Home() {
           </div>
         )}
       </header>
- 
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -505,11 +504,11 @@ export default function Home() {
                       Hand-knotted with premium wool, featuring traditional
                       Persian patterns.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £1,299
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -530,11 +529,11 @@ export default function Home() {
                       Contemporary design with bold geometric patterns in
                       neutral tones.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £899
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -558,11 +557,11 @@ export default function Home() {
                       Exquisite silk blend with intricate floral patterns and
                       rich colors.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £1,599
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -583,11 +582,11 @@ export default function Home() {
                       Artfully distressed design with a vintage feel and durable
                       construction.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £999
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -638,11 +637,11 @@ export default function Home() {
                       Modular design with premium upholstery and comfortable
                       cushioning.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £2,499
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -663,11 +662,11 @@ export default function Home() {
                       Solid wood frame with sleek design and built-in storage
                       options.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £1,899
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -688,11 +687,11 @@ export default function Home() {
                       Ergonomic design with premium leather upholstery and solid
                       wood legs.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £799
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -716,11 +715,11 @@ export default function Home() {
                       Solid oak table with six matching chairs, perfect for
                       family gatherings.
                     </p>
-                    <div className="mt-2">
+                    {/* <div className="mt-2">
                       <span className="text-lg font-bold text-teal-700">
                         £2,199
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -1051,30 +1050,27 @@ export default function Home() {
         </section>
       </main>
 
-
-
       {/* Footer - Updated to single row layout */}
-      <footer className="w-full border-t border-slate-200 bg-white py-6">
-  <div className="container mx-auto max-w-5xl px-4">
-    <div className="flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-y-0 md:gap-x-8">
-      
-      {/* Logo */}
-      <div className="flex-shrink-0">
-        <img
-          src="/main-logo.png"
-          alt="SB Carpet and Furniture Logo"
-          className="h-12"
-        />
-      </div>
+      <footer className="w-full border-t border-slate-200 bg-white py-4">
+        <div className="container mx-auto max-w-5xl px-4 sm:px-6 md:px-8">
+          <div className="flex md:flex-row items-center justify-between gap-y-4 md:gap-y-0 md:gap-x-8">
+            {/* Logo */}
+            <div className="hidden md:block">
+              <img
+                src="/main-logo.png"
+                alt="SB Carpet and Furniture Logo"
+                className="h-12"
+              />
+            </div>
 
-      {/* Copyright */}
-      <div className="text-md text-slate-500 text-center md:text-right">
-        © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All rights reserved.
-      </div>
-    </div>
-  </div>
-</footer>
-
+            {/* Copyright */}
+            <div className="text-md text-slate-500 text-center md:text-right">
+              © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All
+              rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
