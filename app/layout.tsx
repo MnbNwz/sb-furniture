@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Carpet and Furniture Ltd.",
+  title: "SB Carpet and Furniture Ltd.",
   description:
     "Premium carpets and stylish furniture for your home or business.",
   generator: "SB Web Team",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   authors: [{ name: "SB Carpet and Furniture Ltd." }],
   applicationName: "SB Furniture App",
   icons: {
-    icon: "/faviconn.png", // This is the key line
+    icon: "/favicon.png", // This is the key line
   },
   creator: "Muneeb Nawaz",
 };

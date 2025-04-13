@@ -228,9 +228,11 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-slate-800">
-              SB Carpet and Furniture
-            </span>
+            <img
+              src="/main-logo.png"
+              alt="SB Carpet and Furniture Logo"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -286,7 +288,7 @@ export default function Home() {
               Contact Us
             </button>
 
-            <div className="flex items-center gap-4 ml-4">
+            <div className="flex items-center gap-8 ml-8">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -418,6 +420,7 @@ export default function Home() {
           </div>
         )}
       </header>
+ 
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -1048,60 +1051,30 @@ export default function Home() {
         </section>
       </main>
 
+
+
       {/* Footer - Updated to single row layout */}
       <footer className="w-full border-t border-slate-200 bg-white py-6">
-        <div className="container mx-auto max-w-5xl px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-y-0 md:gap-x-8">
-            {/* Logo */}
-            <div className="w-full  flex justify-center md:justify-start">
-              <span className="text-lg font-bold text-slate-800">
-                SB Carpet and Furniture
-              </span>
-            </div>
+  <div className="container mx-auto max-w-5xl px-4">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-y-0 md:gap-x-8">
+      
+      {/* Logo */}
+      <div className="flex-shrink-0">
+        <img
+          src="/main-logo.png"
+          alt="SB Carpet and Furniture Logo"
+          className="h-12"
+        />
+      </div>
 
-            {/* Social Icons */}
-            <div className="w-full  flex justify-center">
-              <div className="flex items-center gap-6 md:gap-8">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-500 hover:text-teal-600 transition-colors"
-                >
-                  <Facebook className="h-7 w-7" />
-                  <span className="sr-only">Facebook</span>
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-500 hover:text-teal-600 transition-colors"
-                >
-                  <Instagram className="h-7 w-7" />
-                  <span className="sr-only">Instagram</span>
-                </a>
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-500 hover:text-teal-600 transition-colors"
-                >
-                  <WhatsApp className="h-7 w-7" />
-                  <span className="sr-only">WhatsApp</span>
-                </a>
-              </div>
-            </div>
+      {/* Copyright */}
+      <div className="text-md text-slate-500 text-center md:text-right">
+        © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
 
-            {/* Copyright */}
-            <div className="w-full md:w-auto flex justify-center md:justify-end">
-              <p className="text-sm text-slate-500 text-center md:text-right">
-                © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All
-                rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
