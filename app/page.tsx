@@ -617,9 +617,9 @@ export default function Home() {
               <div className="mx-auto grid gap-6 sm:gap-8 py-8 sm:py-12 grid-cols-1 sm:grid-cols-2">
                 {/* Furniture 1 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
-                  {/* <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
+                  <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
                     Popular
-                  </div> */}
+                  </div>
                   <Image
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
@@ -695,9 +695,9 @@ export default function Home() {
 
                 {/* Furniture 4 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
-                  {/* <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
+                  <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
                     New Arrival
-                  </div> */}
+                  </div>
                   <Image
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
