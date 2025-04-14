@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   generator: "SB Web Team",
   keywords: [
     "carpets",
+    "vinyl",
     "furniture",
     "interior design",
     "home decor",

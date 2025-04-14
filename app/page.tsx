@@ -17,12 +17,15 @@ import {
   MessageSquareText as WhatsApp,
   X,
   CheckCircle,
+  PhoneCall,
 } from "lucide-react";
 
 export default function Home() {
   // Refs for scrolling
   const homeRef = useRef<HTMLElement>(null);
   const carpetsRef = useRef<HTMLElement>(null);
+  const vinylRef = useRef<HTMLElement>(null);
+
   const furnitureRef = useRef<HTMLElement>(null);
   const aboutRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
@@ -90,6 +93,10 @@ export default function Home() {
     if (carpetsRef.current) {
       carpetsRef.current.id = "carpets";
       observer.observe(carpetsRef.current);
+    }
+    if (vinylRef.current) {
+      vinylRef.current.id = "vinyl";
+      observer.observe(vinylRef.current);
     }
     if (furnitureRef.current) {
       furnitureRef.current.id = "furniture";
@@ -271,6 +278,16 @@ export default function Home() {
               Carpets
             </button>
             <button
+              onClick={() => scrollToSection(vinylRef, "vinyl")}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === "vinyl"
+                  ? "text-teal-600 border-b-2 border-teal-600"
+                  : "text-slate-600 hover:text-teal-600"
+              }`}
+            >
+              Vinyl
+            </button>
+            <button
               onClick={() => scrollToSection(furnitureRef, "furniture")}
               className={`text-sm font-medium transition-colors ${
                 activeSection === "furniture"
@@ -368,6 +385,16 @@ export default function Home() {
                 }`}
               >
                 Carpets
+              </button>
+              <button
+                onClick={() => scrollToSection(vinylRef, "vinyl")}
+                className={`text-sm font-medium transition-colors ${
+                  activeSection === "vinyl"
+                    ? "text-teal-600 border-b-2 border-teal-600"
+                    : "text-slate-600 hover:text-teal-600"
+                }`}
+              >
+                Vinyl
               </button>
               <button
                 onClick={() => scrollToSection(furnitureRef, "furniture")}
@@ -600,6 +627,119 @@ export default function Home() {
                         £999
                       </span>
                     </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Vinyl Section */}
+        <section
+          ref={vinylRef}
+          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-100 to-white"
+        >
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-5xl">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm text-teal-800 mb-2">
+                    Premium Flooring
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-slate-800">
+                    <span className="text-teal-700">Luxury</span> Vinyl
+                    Collection
+                  </h2>
+                  <p className="max-w-[900px] text-slate-600 text-base md:text-xl/relaxed">
+                    High-performance vinyl flooring that delivers style,
+                    durability, and easy maintenance for modern spaces.
+                  </p>
+                </div>
+              </div>
+              <div className="mx-auto grid gap-6 sm:gap-8 py-8 sm:py-12 grid-cols-1 sm:grid-cols-2">
+                {/* Vinyl 1 */}
+                <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
+                  <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
+                    Popular
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=400&width=600"
+                    width={600}
+                    height={400}
+                    alt="Textured Oak Vinyl"
+                    className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold text-slate-800">
+                      Textured Oak Vinyl
+                    </h3>
+                    <p className="text-slate-600">
+                      Authentic wood-grain finish with waterproof durability and
+                      easy installation.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Vinyl 2 */}
+                <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
+                  <Image
+                    src="/placeholder.svg?height=400&width=600"
+                    width={600}
+                    height={400}
+                    alt="Herringbone Vinyl Plank"
+                    className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold text-slate-800">
+                      Herringbone Vinyl Plank
+                    </h3>
+                    <p className="text-slate-600">
+                      Stylish pattern with scratch-resistant surface and
+                      long-lasting performance.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Vinyl 3 */}
+                <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
+                  <Image
+                    src="/placeholder.svg?height=400&width=600"
+                    width={600}
+                    height={400}
+                    alt="Stone Effect Vinyl"
+                    className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold text-slate-800">
+                      Stone Effect Vinyl
+                    </h3>
+                    <p className="text-slate-600">
+                      Elegant stone visuals with soft underfoot feel and easy
+                      upkeep.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Vinyl 4 */}
+                <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
+                  <div className="absolute top-0 right-0 bg-teal-600 text-white text-xs font-medium px-2 py-1 rounded-bl-lg z-10">
+                    New Arrival
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=400&width=600"
+                    width={600}
+                    height={400}
+                    alt="Matte Finish Vinyl Tiles"
+                    className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold text-slate-800">
+                      Matte Finish Vinyl Tiles
+                    </h3>
+                    <p className="text-slate-600">
+                      Sleek matte finish with anti-slip surface, perfect for
+                      high-traffic areas.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -876,12 +1016,23 @@ export default function Home() {
                     </a>
 
                     <a
+                      href="tel:+441724289198"
+                      className="flex items-center gap-3 text-teal-100 hover:text-white transition-colors"
+                    >
+                      <PhoneCall className="h-5 w-5 text-teal-200" />
+                      <div>
+                        <h3 className="font-medium text-white">Telephone</h3>
+                        <p>01724 289198</p>
+                      </div>
+                    </a>
+
+                    <a
                       href="tel:+447525900400"
                       className="flex items-center gap-3 text-teal-100 hover:text-white transition-colors"
                     >
                       <Phone className="h-5 w-5 text-teal-200" />
                       <div>
-                        <h3 className="font-medium text-white">Phone</h3>
+                        <h3 className="font-medium text-white">Mobile</h3>
                         <p>07525 900400</p>
                       </div>
                     </a>
