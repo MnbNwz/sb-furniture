@@ -246,12 +246,12 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-slate-50">
       {/* Navigation Bar */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
               src="/new-logo.jpeg"
               alt="SB Carpet and Furniture Logo"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
@@ -259,7 +259,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection(homeRef, "home")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg font-medium transition-colors ${
                 activeSection === "home"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -269,7 +269,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(carpetsRef, "carpets")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg  font-medium transition-colors ${
                 activeSection === "carpets"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -279,7 +279,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(vinylRef, "vinyl")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg  font-medium transition-colors ${
                 activeSection === "vinyl"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -289,7 +289,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(furnitureRef, "furniture")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg  font-medium transition-colors ${
                 activeSection === "furniture"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -299,7 +299,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(aboutRef, "about")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg  font-medium transition-colors ${
                 activeSection === "about"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -309,7 +309,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(contactRef, "contact")}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-lg  font-medium transition-colors ${
                 activeSection === "contact"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -325,7 +325,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-7 w-7" />
                 <span className="sr-only">Facebook</span>
               </a>
               <a
@@ -334,7 +334,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-7 w-7" />
                 <span className="sr-only">Instagram</span>
               </a>
               <a
@@ -343,7 +343,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <WhatsApp className="h-5 w-5" />
+                <WhatsApp className="h-7 w-7" />
                 <span className="sr-only">WhatsApp</span>
               </a>
             </div>
@@ -368,7 +368,7 @@ export default function Home() {
             <nav className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection(homeRef, "home")}
-                className={`text-sm font-medium py-2 transition-colors ${
+                className={`text-base font-medium py-2 transition-colors ${
                   activeSection === "home"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -378,7 +378,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => scrollToSection(carpetsRef, "carpets")}
-                className={`text-sm font-medium py-2 transition-colors ${
+                className={`text-base font-medium py-2 transition-colors ${
                   activeSection === "carpets"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -388,7 +388,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => scrollToSection(vinylRef, "vinyl")}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-base font-medium transition-colors ${
                   activeSection === "vinyl"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -399,7 +399,7 @@ export default function Home() {
 
               <button
                 onClick={() => scrollToSection(furnitureRef, "furniture")}
-                className={`text-sm font-medium py-2 transition-colors ${
+                className={`text-base font-medium py-2 transition-colors ${
                   activeSection === "furniture"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -409,7 +409,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => scrollToSection(aboutRef, "about")}
-                className={`text-sm font-medium py-2 transition-colors ${
+                className={`text-base font-medium py-2 transition-colors ${
                   activeSection === "about"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -419,7 +419,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => scrollToSection(contactRef, "contact")}
-                className={`text-sm font-medium py-2 transition-colors ${
+                className={`text-base font-medium py-2 transition-colors ${
                   activeSection === "contact"
                     ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
@@ -435,7 +435,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-slate-500 hover:text-teal-600 transition-colors"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-6 w-6" />
                   <span className="sr-only">Facebook</span>
                 </a>
                 <a
@@ -444,7 +444,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-slate-500 hover:text-teal-600 transition-colors"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-6 w-6" />
                   <span className="sr-only">Instagram</span>
                 </a>
                 <a
@@ -453,7 +453,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-slate-500 hover:text-teal-600 transition-colors"
                 >
-                  <WhatsApp className="h-5 w-5" />
+                  <WhatsApp className="h-6 w-6" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
               </div>
@@ -534,22 +534,17 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Persian Wool Carpet"
+                    alt="Saxony Carpet"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Persian Wool Carpet
+                      Saxony Carpet
                     </h3>
                     <p className="text-slate-600">
-                      Hand-knotted with premium wool, featuring traditional
-                      Persian patterns.
+                      Soft and plush, Saxony carpet adds timeless elegance to
+                      any space.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £1,299
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
@@ -564,17 +559,12 @@ export default function Home() {
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Modern Geometric Carpet
+                      Loop Carpet
                     </h3>
                     <p className="text-slate-600">
-                      Contemporary design with bold geometric patterns in
-                      neutral tones.
+                      Durable and textured, Loop carpet is perfect for
+                      high-traffic areas.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £899
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
@@ -587,22 +577,17 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Luxury Silk Blend Carpet"
+                    alt="Twist Carpet"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Luxury Silk Blend Carpet
+                      Twist Carpet
                     </h3>
                     <p className="text-slate-600">
-                      Exquisite silk blend with intricate floral patterns and
-                      rich colors.
+                      Tightly twisted fibers give Twist carpet a stylish,
+                      resilient look.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £1,599
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
@@ -612,22 +597,17 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Vintage Distressed Carpet"
+                    alt="Wilton Carpet"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Vintage Distressed Carpet
+                      Wilton Carpet
                     </h3>
                     <p className="text-slate-600">
-                      Artfully distressed design with a vintage feel and durable
-                      construction.
+                      Expertly woven, Wilton carpet blends tradition with
+                      lasting quality.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £999
-                      </span>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -667,16 +647,16 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Textured Oak Vinyl"
+                    alt="Wood Vinyl"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Textured Oak Vinyl
+                      Wood Vinyl
                     </h3>
                     <p className="text-slate-600">
-                      Authentic wood-grain finish with waterproof durability and
-                      easy installation.
+                      Realistic wood-look vinyl with water resistance and
+                      effortless upkeep.
                     </p>
                   </div>
                 </div>
@@ -687,16 +667,16 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Herringbone Vinyl Plank"
+                    alt="Herringbone Vinyl"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Herringbone Vinyl Plank
+                      Herringbone Vinyl
                     </h3>
                     <p className="text-slate-600">
-                      Stylish pattern with scratch-resistant surface and
-                      long-lasting performance.
+                      Chic herringbone design paired with durable, easy-care
+                      vinyl performance.
                     </p>
                   </div>
                 </div>
@@ -707,16 +687,16 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Stone Effect Vinyl"
+                    alt="Stone Vinyl"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Stone Effect Vinyl
+                      Stone Vinyl
                     </h3>
                     <p className="text-slate-600">
-                      Elegant stone visuals with soft underfoot feel and easy
-                      upkeep.
+                      Natural stone aesthetics with the comfort and practicality
+                      of vinyl.
                     </p>
                   </div>
                 </div>
@@ -730,16 +710,16 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="Matte Finish Vinyl Tiles"
+                    alt="Patterned Tile"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Matte Finish Vinyl Tiles
+                      Patterned Tile
                     </h3>
                     <p className="text-slate-600">
-                      Sleek matte finish with anti-slip surface, perfect for
-                      high-traffic areas.
+                      Bold, decorative designs with lasting durability and easy
+                      maintenance.
                     </p>
                   </div>
                 </div>
@@ -805,22 +785,17 @@ export default function Home() {
                     src="/placeholder.svg?height=400&width=600"
                     width={600}
                     height={400}
-                    alt="King Size Platform Bed"
+                    alt="Divan Bed"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      King Size Platform Bed
+                      Divan Bed
                     </h3>
                     <p className="text-slate-600">
-                      Solid wood frame with sleek design and built-in storage
-                      options.
+                      Space-saving comfort with built-in storage and a sleek,
+                      upholstered finish.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £1,899
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
@@ -841,11 +816,6 @@ export default function Home() {
                       Ergonomic design with premium leather upholstery and solid
                       wood legs.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £799
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
@@ -869,11 +839,6 @@ export default function Home() {
                       Solid oak table with six matching chairs, perfect for
                       family gatherings.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £2,199
-                      </span>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -898,21 +863,25 @@ export default function Home() {
                       <span className="text-teal-700">About</span> Us
                     </h2>
                     <p className="text-slate-600 text-base md:text-xl/relaxed">
-                      For more than 30 years, SB Carpet and Furniture has been
-                      providing premium quality carpets and furniture to
-                      discerning customers. Our commitment to craftsmanship,
-                      quality materials, and exceptional customer service has
-                      made us a trusted name in home furnishings.
+                      For many years, SB Carpet and Furniture has been providing
+                      premium quality carpets and furniture to discerning
+                      customers. Our commitment to craftsmanship, quality
+                      materials, and exceptional customer service has made us a
+                      trusted name in home furnishings.
                     </p>
                     <p className="text-slate-600 text-base md:text-xl/relaxed">
                       We carefully source our products from skilled artisans and
                       reputable manufacturers around the world, ensuring that
                       each piece meets our high standards for quality and
-                      design.
+                      design. To enhance your experience, we offer free samples,
+                      complimentary measuring and estimating services, a wide
+                      range of colors and styles, an extensive selection of beds
+                      and bedroom furniture, and convenient home delivery
+                      options tailored to your schedule.
                     </p>
                     <p className="font-medium text-base md:text-xl/relaxed text-teal-700">
-                      We are approved from locals and proud to be a community
-                      favorite!
+                      We are approved from local council contractor and proud to
+                      be a community favorite!
                     </p>
                   </div>
                 </div>
@@ -924,33 +893,33 @@ export default function Home() {
                   <div className="grid gap-6">
                     <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm hover:border-teal-300 transition-colors">
                       <h4 className="text-lg font-semibold text-teal-700 mb-2">
-                        Quality Materials
+                        Wet Floors
                       </h4>
                       <p className="text-slate-600">
-                        We use only the finest materials, from premium wool and
-                        silk for our carpets to solid hardwoods and top-grain
-                        leathers for our furniture.
+                        We offer flooring options that support safety standards
+                        in both commercial and domestic spaces, reducing slip
+                        risks and ensuring compliance with health and safety
+                        guidelines.
                       </p>
                     </div>
                     <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm hover:border-teal-300 transition-colors">
                       <h4 className="text-lg font-semibold text-teal-700 mb-2">
-                        Traditional Techniques
+                        Free Measurements
                       </h4>
                       <p className="text-slate-600">
-                        Our artisans employ time-honored techniques passed down
-                        through generations, ensuring each piece is crafted with
-                        care and attention to detail.
+                        Our team provides complimentary measurement services to
+                        ensure a perfect fit — saving you time, money, and
+                        hassle right from the start.
                       </p>
                     </div>
                     <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm hover:border-teal-300 transition-colors">
                       <h4 className="text-lg font-semibold text-teal-700 mb-2">
-                        Sustainability Commitment
+                        Price Match Guarantee
                       </h4>
                       <p className="text-slate-600">
-                        We're committed to sustainable practices, from
-                        responsibly sourced materials to eco-friendly
-                        manufacturing processes that minimize environmental
-                        impact.
+                        We’re confident in our value — if you find a better
+                        quote, we’ll beat it to give you the best deal without
+                        compromising on quality.
                       </p>
                     </div>
                   </div>
@@ -1225,12 +1194,12 @@ export default function Home() {
                 // src="/main-logo.png"
                 src="/new-logo.jpeg"
                 alt="SB Carpet and Furniture Logo"
-                className="h-12"
+                className="h-16"
               />
             </div>
 
             {/* Copyright */}
-            <div className="text-md text-slate-500 text-center md:text-right">
+            <div className="text-lg text-slate-500 text-center md:text-right">
               © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All
               rights reserved.
             </div>
