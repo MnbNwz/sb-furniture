@@ -390,12 +390,13 @@ export default function Home() {
                 onClick={() => scrollToSection(vinylRef, "vinyl")}
                 className={`text-sm font-medium transition-colors ${
                   activeSection === "vinyl"
-                    ? "text-teal-600 border-b-2 border-teal-600"
+                    ? "text-teal-600 font-semibold"
                     : "text-slate-600 hover:text-teal-600"
                 }`}
               >
                 Vinyl
               </button>
+
               <button
                 onClick={() => scrollToSection(furnitureRef, "furniture")}
                 className={`text-sm font-medium py-2 transition-colors ${
