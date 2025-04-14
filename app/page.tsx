@@ -249,7 +249,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/main-logo.png"
+              src="/new-logo.jpeg"
               alt="SB Carpet and Furniture Logo"
               className="h-12 w-auto"
             />
@@ -1222,7 +1222,8 @@ export default function Home() {
             {/* Logo */}
             <div className="hidden md:block">
               <img
-                src="/main-logo.png"
+                // src="/main-logo.png"
+                src="/new-logo.jpeg"
                 alt="SB Carpet and Furniture Logo"
                 className="h-12"
               />
