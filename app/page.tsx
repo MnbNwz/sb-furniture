@@ -490,11 +490,11 @@ export default function Home() {
                 </div>
                 <div className="flex items-center justify-center">
                   <Image
-                    src="/placeholder.svg?height=550&width=550"
-                    width={550}
-                    height={550}
+                    src="/furniture.jpg"
+                    width={700}
+                    height={700}
                     alt="Elegant living room with carpet and furniture"
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover w-full max-w-[550px] lg:order-last shadow-lg"
+                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover w-full max-w-[700px] lg:order-last shadow-lg"
                   />
                 </div>
               </div>
@@ -531,7 +531,7 @@ export default function Home() {
                     Best Seller
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/saxony_carpet.webp"
                     width={600}
                     height={400}
                     alt="Saxony Carpet"
@@ -551,7 +551,7 @@ export default function Home() {
                 {/* Carpet 2 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/loop_carpet.webp"
                     width={600}
                     height={400}
                     alt="Modern Geometric Carpet"
@@ -574,7 +574,7 @@ export default function Home() {
                     Premium
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/twist_carpet.webp"
                     width={600}
                     height={400}
                     alt="Twist Carpet"
@@ -594,7 +594,7 @@ export default function Home() {
                 {/* Carpet 4 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/wilton_carpet.webp"
                     width={600}
                     height={400}
                     alt="Wilton Carpet"
@@ -644,7 +644,7 @@ export default function Home() {
                     Popular
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/wood_vinyl.webp"
                     width={600}
                     height={400}
                     alt="Wood Vinyl"
@@ -664,7 +664,7 @@ export default function Home() {
                 {/* Vinyl 2 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/Herringbone_vinyl.webp"
                     width={600}
                     height={400}
                     alt="Herringbone Vinyl"
@@ -684,7 +684,7 @@ export default function Home() {
                 {/* Vinyl 3 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/stone_vinyl.webp"
                     width={600}
                     height={400}
                     alt="Stone Vinyl"
@@ -707,7 +707,7 @@ export default function Home() {
                     New Arrival
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/patterned_vinyl.webp"
                     width={600}
                     height={400}
                     alt="Patterned Tile"
@@ -757,7 +757,7 @@ export default function Home() {
                     Popular
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/modern_sofa.webp"
                     width={600}
                     height={400}
                     alt="Modern Sectional Sofa"
@@ -771,18 +771,13 @@ export default function Home() {
                       Modular design with premium upholstery and comfortable
                       cushioning.
                     </p>
-                    {/* <div className="mt-2">
-                      <span className="text-lg font-bold text-teal-700">
-                        £2,499
-                      </span>
-                    </div> */}
                   </div>
                 </div>
 
                 {/* Furniture 2 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/divan_bed.jpg"
                     width={600}
                     height={400}
                     alt="Divan Bed"
@@ -802,7 +797,7 @@ export default function Home() {
                 {/* Furniture 3 */}
                 <div className="group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md cursor-pointer hover:border-teal-300">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/accent_chair.jpg"
                     width={600}
                     height={400}
                     alt="Accent Lounge Chair"
@@ -825,7 +820,7 @@ export default function Home() {
                     New Arrival
                   </div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/Dining_table.webp"
                     width={600}
                     height={400}
                     alt="Dining Table Set"
