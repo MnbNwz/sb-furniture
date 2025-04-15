@@ -256,10 +256,10 @@ export default function Home() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:gap-10 xl:gap-12 md:flex items-center gap-6">
             <button
               onClick={() => scrollToSection(homeRef, "home")}
-              className={`text-lg font-medium transition-colors ${
+              className={`text-sm font-medium transition-colors ${
                 activeSection === "home"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -269,7 +269,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(carpetsRef, "carpets")}
-              className={`text-lg  font-medium transition-colors ${
+              className={`text-sm  font-medium transition-colors ${
                 activeSection === "carpets"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -279,7 +279,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(vinylRef, "vinyl")}
-              className={`text-lg  font-medium transition-colors ${
+              className={`text-sm  font-medium transition-colors ${
                 activeSection === "vinyl"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -289,7 +289,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(furnitureRef, "furniture")}
-              className={`text-lg  font-medium transition-colors ${
+              className={`text-sm  font-medium transition-colors ${
                 activeSection === "furniture"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -299,7 +299,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(aboutRef, "about")}
-              className={`text-lg  font-medium transition-colors ${
+              className={`text-sm  font-medium transition-colors ${
                 activeSection === "about"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -309,7 +309,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => scrollToSection(contactRef, "contact")}
-              className={`text-lg  font-medium transition-colors ${
+              className={`text-sm  font-medium transition-colors ${
                 activeSection === "contact"
                   ? "text-teal-600 border-b-2 border-teal-600"
                   : "text-slate-600 hover:text-teal-600"
@@ -325,7 +325,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <Facebook className="h-7 w-7" />
+                <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
               <a
@@ -334,7 +334,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <Instagram className="h-7 w-7" />
+                <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </a>
               <a
@@ -343,7 +343,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-teal-600 transition-colors"
               >
-                <WhatsApp className="h-7 w-7" />
+                <WhatsApp className="h-5 w-5" />
                 <span className="sr-only">WhatsApp</span>
               </a>
             </div>
@@ -1194,7 +1194,7 @@ export default function Home() {
             </div>
 
             {/* Copyright */}
-            <div className="text-lg text-slate-500 text-center md:text-right">
+            <div className="text-sm text-slate-500 text-center md:text-right">
               © {new Date().getFullYear()} SB Carpet and Furniture Ltd. All
               rights reserved.
             </div>
