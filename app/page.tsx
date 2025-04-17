@@ -710,12 +710,12 @@ export default function Home() {
                     src="/patterned_vinyl.webp"
                     width={600}
                     height={400}
-                    alt="Patterned Tile"
+                    alt="Patterned Vinyl"
                     className="aspect-[4/3] w-full object-cover transition-transform group-hover:scale-105"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-slate-800">
-                      Patterned Tile
+                      Patterned Vinyl
                     </h3>
                     <p className="text-slate-600">
                       Bold, decorative designs with lasting durability and easy
